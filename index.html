@@ -65,17 +65,30 @@
       transform: translateY(-3px);
     }
 
-    .hand {
-      width: 50%;
-      height: 6px;
-      background: black;
-      position: absolute;
-      top: 50%;
-      transform-origin: 100%;
-      transform: rotate(90deg);
-      transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+ 
+    .min-hand, .second-hand {
+        width: 50%; 
+        height: 6px;
+        background: yellow; 
+        position: absolute;
+        top: 50%;
+        transform-origin: 100%;
+        transform: rotate(90deg);
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
+ 
+    .hour-hand {
+        width: 30%; 
+        height: 6px;
+        background: yellow; 
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform-origin: 100%;
+        transform: rotate(90deg);
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
     .footer {
       position: absolute;
       bottom: 0;
